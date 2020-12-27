@@ -1,0 +1,34 @@
+singleton Design Pattern:
+Define a class that has only one instance and provides a global point
+of access that instance.
+
+Requirements:
+-> One and only one instance
+-> Global access (Anyone can use this object anywhere in the program)
+-> No ownership
+-> Lazy Initialization
+
+Advantages:
+a) save memory
+-> Only one object is required so why to create so many objects.
+
+b) single access point-
+-> Logger (Alll the log prints), database connection
+
+c) Flexibility
+-> change anytime you want to
+
+Usages:
+a) MultiThreaded
+- threadpool
+Ex: Get a thread from the threadpool and once done with the work,
+returning a thread back to the pool. This threadpool is implemented
+using singleton.
+
+Because we can't have two thread pool's at the same time
+
+b) Database Application
+- Logging
+
+c) configuration settings
+- Game setting, application setting, etc.
